@@ -1,0 +1,4 @@
+emp_df.na.drop(subset=['COMM','JOB']).show()
+emp_df.na.fill({'JOB':'ALL','COMM':0}).show()
+emp_df.na.replace('N/A','Balaji').show()
+emp_df.na.replace({'N/A':'Balaji','SCOTT':'SC'},subset=['JOB','ENAME']).show()
